@@ -3,8 +3,7 @@
 
 name: Maven Package
 
-on:
-    types: [push]
+on: push
 
 jobs:
   build:
