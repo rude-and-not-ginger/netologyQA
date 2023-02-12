@@ -44,7 +44,7 @@ class BonusServiceTest {
         BonusService service = new BonusService();
 
         // prepare data
-        long amount = 1000_60;
+        long amount = 100060;
         boolean registered = false;
         long expected = 10;
 
