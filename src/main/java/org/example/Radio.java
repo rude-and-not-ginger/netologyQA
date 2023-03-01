@@ -1,4 +1,4 @@
-package org.example.radio;
+package org.example;
 
 public class Radio {
 
@@ -51,11 +51,17 @@ public class Radio {
         if (setCurrentVolume < maxVolume) {
             setCurrentVolume ++;
         }
+        if (setCurrentVolume > maxVolume) {
+            return maxVolume;
+        }
         return setCurrentVolume;
     }
     public int decreaseVolume(int setCurrentVolume) {
         if (setCurrentVolume > minVolume) {
         setCurrentVolume --;
+        }
+        if (setCurrentVolume < minVolume) {
+            return minVolume;
         }
         return setCurrentVolume;
         }

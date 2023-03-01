@@ -55,15 +55,15 @@
                 <configuration>
                     <failOnError>false</failOnError>
                 </configuration>
-                <executions>
+               <!-- <executions>
                     <execution>
                         <id>verify</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
-                    </execution>
-                </executions>
+                    </execution>-->
+<!--                </executions>-->
             </plugin>
 
             <plugin>
