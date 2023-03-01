@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Radio</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: Radio (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Radio</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (33/33)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+<b class="fc">&nbsp;public class Radio {</b>
+&nbsp;
+&nbsp;    private int currentStation;
+&nbsp;    private int currentVolume;
+<b class="fc">&nbsp;    private int maxStation = 9;</b>
+<b class="fc">&nbsp;    private int minStation = 0;</b>
+<b class="fc">&nbsp;    private int maxVolume = 10;</b>
+<b class="fc">&nbsp;    private int minVolume= 0;</b>
+&nbsp;
+&nbsp;    public int setCurrentStation(int currentStation) {
+<b class="fc">&nbsp;        if (currentStation &gt; maxStation) {</b>
+<b class="fc">&nbsp;            return minStation;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        if (currentStation &lt; minStation) {</b>
+<b class="fc">&nbsp;            return minStation;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        this.currentStation = currentStation;</b>
+<b class="fc">&nbsp;        return currentStation;</b>
+&nbsp;    }
+&nbsp;    public int nextStation(int setCurrentStation) {
+<b class="fc">&nbsp;        if (setCurrentStation &lt; maxStation &amp;&amp; setCurrentStation &gt;= minStation) {</b>
+<b class="fc">&nbsp;            setCurrentStation ++;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        if (setCurrentStation == maxStation) {</b>
+<b class="fc">&nbsp;            setCurrentStation = minStation;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return setCurrentStation;</b>
+&nbsp;        }
+&nbsp;    public int previousStation(int setCurrentStation) {
+<b class="fc">&nbsp;        if (setCurrentStation &lt;= maxStation &amp;&amp; setCurrentStation &gt; minStation) {</b>
+<b class="fc">&nbsp;            setCurrentStation --;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        if (setCurrentStation == minStation) {</b>
+<b class="fc">&nbsp;            setCurrentStation = maxStation;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return setCurrentStation;</b>
+&nbsp;    }
+&nbsp;    public int setCurrentVolume(int currentVolume) {
+<b class="fc">&nbsp;        if (currentVolume &gt; maxVolume) {</b>
+<b class="fc">&nbsp;            return maxVolume;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        if (currentVolume &lt; minVolume) {</b>
+<b class="fc">&nbsp;            return minVolume;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        this.currentVolume = currentVolume;</b>
+<b class="fc">&nbsp;        return currentVolume;</b>
+&nbsp;    }
+&nbsp;    public int increaseVolume(int setCurrentVolume) {
+<b class="fc">&nbsp;        if (setCurrentVolume &lt; maxVolume) {</b>
+<b class="fc">&nbsp;            setCurrentVolume ++;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return setCurrentVolume;</b>
+&nbsp;    }
+&nbsp;    public int decreaseVolume(int setCurrentVolume) {
+<b class="fc">&nbsp;        if (setCurrentVolume &gt; minVolume) {</b>
+<b class="fc">&nbsp;        setCurrentVolume --;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return setCurrentVolume;</b>
+&nbsp;        }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-01 21:33</div>
+</div>
+</body>
+</html>

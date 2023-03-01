@@ -1,0 +1,128 @@
+package org.example.radio;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class RadioTest {
+    @Test
+    void shouldSetNewStation() {
+        Radio service = new Radio();
+
+        int currentStation = 6;
+        int expected = 6;
+        int actual = service.setCurrentStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldNotSetNewStation() {
+        Radio service = new Radio();
+
+        int currentStation = 16;
+        int expected = 0;
+        int actual = service.setCurrentStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldNotSetNegativeStation() {
+        Radio service = new Radio();
+
+        int currentStation = -10;
+        int expected = 0;
+        int actual = service.setCurrentStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldSetNextStation() {
+        Radio service = new Radio();
+
+        int currentStation = 1;
+        int expected = 2;
+        int actual = service.nextStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldSetNextFirstStation() {
+        Radio service = new Radio();
+
+        int currentStation = 9;
+        int expected = 0;
+        int actual = service.nextStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldSetPreviousLastStation() {
+        Radio service = new Radio();
+
+        int currentStation = 0;
+        int expected = 9;
+        int actual = service.previousStation(currentStation);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldSetPreviousStation() {
+        Radio service = new Radio();
+
+        int currentStation = 2;
+        int expected = 1;
+        int actual = service.previousStation(currentStation);
+
+        assertEquals(expected,actual);
+    }
+    @Test
+    void shouldSetNewVolume() {
+        Radio service = new Radio();
+
+        int currentVolume = 6;
+        int expected = 6;
+        int actual = service.setCurrentVolume(currentVolume);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldNotSetNewVolume() {
+        Radio service = new Radio();
+
+        int currentVolume = 16;
+        int expected = 10;
+        int actual = service.setCurrentVolume(currentVolume);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldNotSetNegativeVolume() {
+        Radio service = new Radio();
+
+        int currentVolume = -10;
+        int expected = 0;
+        int actual = service.setCurrentVolume(currentVolume);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldIncreaseVolume() {
+        Radio service = new Radio();
+
+        int currentVolume = 2;
+        int expected = 3;
+        int actual = service.increaseVolume(currentVolume);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    void shouldDecreaseVolume() {
+        Radio service = new Radio();
+
+        int currentVolume = 2;
+        int expected = 1;
+        int actual = service.decreaseVolume(currentVolume);
+
+        assertEquals(expected, actual);
+    }
+}

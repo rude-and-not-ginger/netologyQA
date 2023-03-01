@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Sales</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example.sales</a>
+</div>
+
+<h1>Coverage Summary for Class: Sales (org.example.sales)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Sales</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/31)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example.sales;
+&nbsp;
+<b class="nc">&nbsp;public class Sales {</b>
+&nbsp;    public int calculateSumSales(int[] sales) {
+<b class="nc">&nbsp;        int sum = 0;</b>
+<b class="nc">&nbsp;        for (int sale : sales) {</b>
+<b class="nc">&nbsp;            sum += sale;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return sum;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int calculateAverageSale(int[] sales) {
+<b class="nc">&nbsp;        int averageSale = calculateSumSales(sales) / sales.length;</b>
+&nbsp;
+<b class="nc">&nbsp;        return averageSale;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int calculateMaxSales(int[] sales) {
+<b class="nc">&nbsp;        int maxMonth = 0;</b>
+<b class="nc">&nbsp;        int month = 0;</b>
+<b class="nc">&nbsp;        for (int sale : sales) {</b>
+<b class="nc">&nbsp;            if (sale &gt;= sales[maxMonth]) {</b>
+<b class="nc">&nbsp;                maxMonth = month;</b>
+&nbsp;            }
+<b class="nc">&nbsp;            month = month + 1;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return maxMonth + 1;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int calculateMinSales(int[] sales) {
+<b class="nc">&nbsp;        int minMonth = 0;</b>
+<b class="nc">&nbsp;        int month = 0;</b>
+<b class="nc">&nbsp;        for (int sale : sales) {</b>
+<b class="nc">&nbsp;            if (sale &lt;= sales[minMonth]) {</b>
+<b class="nc">&nbsp;                minMonth = month;</b>
+&nbsp;            }
+<b class="nc">&nbsp;            month = month + 1;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return minMonth + 1;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int monthsSalesBelow(int[] sales) {
+<b class="nc">&nbsp;        int counterMonth = 0;</b>
+<b class="nc">&nbsp;        for (int sale : sales) {</b>
+<b class="nc">&nbsp;            if (sale &lt; calculateAverageSale(sales)) {</b>
+<b class="nc">&nbsp;                counterMonth ++;</b>
+&nbsp;            }
+&nbsp;        }
+<b class="nc">&nbsp;        return counterMonth;</b>
+&nbsp;    }
+&nbsp;    public int monthsSalesAbove(int[] sales) {
+<b class="nc">&nbsp;        int counterMonth = 0;</b>
+<b class="nc">&nbsp;        for (int sale : sales) {</b>
+<b class="nc">&nbsp;            if (sale &gt; calculateAverageSale(sales)) {</b>
+<b class="nc">&nbsp;                counterMonth ++;</b>
+&nbsp;            }
+&nbsp;        }
+<b class="nc">&nbsp;        return counterMonth;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-01 21:33</div>
+</div>
+</body>
+</html>
