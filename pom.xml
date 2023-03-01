@@ -21,12 +21,14 @@
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
+<!--
 
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
             <version>3.1.2</version>
         </dependency>
+-->
 
     </dependencies>
 
@@ -116,6 +118,7 @@
         </plugins>
     </build>
 
+<!--
     <reporting>
         <plugins>
             <plugin>
@@ -128,5 +131,6 @@
             </plugin>
         </plugins>
     </reporting>
+-->
 
 </project>
