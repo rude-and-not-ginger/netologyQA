@@ -12,7 +12,14 @@ class RadioTest {
         int actual = service.getQuantityOfStations();
 
         assertEquals(12, actual);
+    }
 
+    @Test
+    void checkGetStation() {
+        Radio service = new Radio();
+        int actual = service.getCurrentStation();
+
+        assertEquals(0, actual);
     }
     @Test
     void shouldSetNewStation() {
