@@ -138,8 +138,8 @@ class RadioTest {
     void shouldNotSetNewVolume() {
         Radio service = new Radio();
 
-        int currentVolume = 16;
-        int expected = 10;
+        int currentVolume = 160;
+        int expected = 100;
         int actual = service.setCurrentVolume(currentVolume);
 
         assertEquals(expected, actual);
@@ -168,8 +168,8 @@ class RadioTest {
     void shouldNotIncreaseVolume() {
         Radio service = new Radio();
 
-        int currentVolume = 12;
-        int expected = 10;
+        int currentVolume = 100;
+        int expected = 100;
         int actual = service.increaseVolume(currentVolume);
 
         assertEquals(expected, actual);

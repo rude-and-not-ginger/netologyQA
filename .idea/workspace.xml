@@ -125,7 +125,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.shouldCreateRadioWithStation">
+  <component name="RunManager" selected="JUnit.RadioTest.shouldNotIncreaseVolume">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="netologyQA" />
@@ -164,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetNextStationEdgeCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotIncreaseVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
@@ -174,13 +174,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetNextStationEdgeCase" />
+      <option name="METHOD_NAME" value="shouldNotIncreaseVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetPreviousStationEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetNewVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
@@ -190,7 +190,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetPreviousStationEdge" />
+      <option name="METHOD_NAME" value="shouldNotSetNewVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RadioTest.shouldNotIncreaseVolume" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetNewVolume" />
         <item itemvalue="JUnit.RadioTest.shouldCreateRadioWithStation" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetPreviousStationEdge" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetNextStationEdgeCase" />
       </list>
     </recent_temporary>
   </component>
