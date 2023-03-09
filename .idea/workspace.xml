@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0e7658-131a-42a5-9acc-90ac9912eba1" name="Changes" comment="first push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FormDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/radio/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/radio/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RadioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,7 +121,14 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="netologyQA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
@@ -185,29 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetPreviousLastStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netologyQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetPreviousLastStation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RadioTest" />
         <item itemvalue="JUnit.RadioTest.shouldNotSetPreviousStationEdge" />
         <item itemvalue="JUnit.RadioTest.shouldNotSetNextStationEdgeCase" />
         <item itemvalue="JUnit.RadioTest.shouldIncreaseVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldSetPreviousLastStation" />
       </list>
     </recent_temporary>
   </component>
@@ -245,14 +236,24 @@
     <MESSAGE value="first push" />
     <option name="LAST_COMMIT_MESSAGE" value="first push" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/netologyQA$RadioTest_shouldSetPreviousLastStation.ic" NAME="RadioTest.shouldSetPreviousLastStation Coverage Results" MODIFIED="1677703899443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.example.radio.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="../../../IdeaProjects/netologyQA/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1677705156718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/netologyQA$RadioTest.ic" NAME="RadioTest Coverage Results" MODIFIED="1677704576431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>radio.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="../../../IdeaProjects/netologyQA/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1677612284912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../IdeaProjects/netologyQA/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1677705156718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
