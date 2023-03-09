@@ -2,19 +2,36 @@ package org.example;
 
 public class Radio {
 
+    private int quantityOfStations = 9;
     private int currentStation;
     private int currentVolume;
     private int maxStation = 9;
     private int minStation = 0;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
     private int minVolume= 0;
+
+    public Radio(int quantityOfStations) {
+        this.quantityOfStations = quantityOfStations;
+    }
+
+    public Radio() {
+    }
+
+    public int getQuantityOfStations() {
+        return quantityOfStations;
+    }
+
+    public void setQuantityOfStations(int quantityOfStations) {
+        this.quantityOfStations = quantityOfStations;
+    }
 
     public int setCurrentStation(int currentStation) {
         if (currentStation > maxStation) {
             return minStation;
-        }
-        if (currentStation < minStation) {
-            return minStation;
+        } else {
+            if (currentStation < minStation) {
+                return minStation;
+            }
         }
         this.currentStation = currentStation;
         return currentStation;
