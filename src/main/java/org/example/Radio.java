@@ -1,5 +1,10 @@
 package org.example;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class Radio {
 
     private int quantityOfStations = 9;
@@ -11,17 +16,6 @@ public class Radio {
     private int minVolume= 0;
 
     public Radio(int quantityOfStations) {
-        this.quantityOfStations = quantityOfStations;
-    }
-
-    public Radio() {
-    }
-
-    public int getQuantityOfStations() {
-        return quantityOfStations;
-    }
-
-    public void setQuantityOfStations(int quantityOfStations) {
         this.quantityOfStations = quantityOfStations;
     }
 

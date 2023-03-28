@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0e7658-131a-42a5-9acc-90ac9912eba1" name="Changes" comment="first push">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/product/ProductManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -89,7 +93,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.CSV/TSV/PSV&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;Lombok&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -106,11 +110,11 @@
       <recent name="org.example.bonus" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.product" />
+      <recent name="org.example.afisha" />
       <recent name="org.example" />
       <recent name="org.example.statistic" />
       <recent name="org.example.sales" />
-      <recent name="org.example.sqr" />
-      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -125,72 +129,82 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.shouldNotIncreaseVolume">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="netologyQA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductManagerTest.shouldReturnSearchedProduct">
+    <configuration name="ManagerAfishaTest.removeAllMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="radio.*" />
+          <option name="PATTERN" value="org.example.afisha.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest.shouldCreateRadioWithStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netologyQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldCreateRadioWithStation" />
+      <option name="PACKAGE_NAME" value="org.example.afisha" />
+      <option name="MAIN_CLASS_NAME" value="org.example.afisha.ManagerAfishaTest" />
+      <option name="METHOD_NAME" value="removeAllMovies" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotIncreaseVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerAfishaTest.returnLastMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.afisha.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotIncreaseVolume" />
+      <option name="PACKAGE_NAME" value="org.example.afisha" />
+      <option name="MAIN_CLASS_NAME" value="org.example.afisha.ManagerAfishaTest" />
+      <option name="METHOD_NAME" value="returnLastMovies" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNotSetNewVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerAfishaTest.shouldAddMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.afisha.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.RadioTest" />
-      <option name="METHOD_NAME" value="shouldNotSetNewVolume" />
+      <option name="PACKAGE_NAME" value="org.example.afisha" />
+      <option name="MAIN_CLASS_NAME" value="org.example.afisha.ManagerAfishaTest" />
+      <option name="METHOD_NAME" value="shouldAddMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldAddProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netologyQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.product" />
+      <option name="MAIN_CLASS_NAME" value="org.example.product.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldAddProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldReturnSearchedProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netologyQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.product" />
+      <option name="MAIN_CLASS_NAME" value="org.example.product.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldReturnSearchedProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RadioTest.shouldNotIncreaseVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldNotSetNewVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldCreateRadioWithStation" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.RadioTest" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldReturnSearchedProduct" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldAddProducts" />
+        <item itemvalue="JUnit.ManagerAfishaTest.shouldAddMovies" />
+        <item itemvalue="JUnit.ManagerAfishaTest.removeAllMovies" />
+        <item itemvalue="JUnit.ManagerAfishaTest.returnLastMovies" />
       </list>
     </recent_temporary>
   </component>
@@ -265,8 +279,17 @@
           <line>14</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/product/ProductManagerTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/netologyQA$RadioTest_shouldSetPreviousLastStation.ic" NAME="RadioTest.shouldSetPreviousLastStation Coverage Results" MODIFIED="1677703899443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
