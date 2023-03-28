@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0e7658-131a-42a5-9acc-90ac9912eba1" name="Changes" comment="first push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/afisha/ManagerAfisha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/afisha/MovieSaver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/purchase/CartManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/purchase/PurchaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/afisha/ManagerAfishaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/product/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/product/ProductManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,11 +110,11 @@
       <recent name="org.example.bonus" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.product" />
       <recent name="org.example.afisha" />
       <recent name="org.example" />
       <recent name="org.example.statistic" />
       <recent name="org.example.sales" />
-      <recent name="org.example.sqr" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -128,22 +129,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerAfishaTest.removeAllMovies">
-    <configuration name="ManagerAfishaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="netologyQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.afisha.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.afisha" />
-      <option name="MAIN_CLASS_NAME" value="org.example.afisha.ManagerAfishaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductManagerTest.shouldReturnSearchedProduct">
     <configuration name="ManagerAfishaTest.removeAllMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
@@ -192,17 +178,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerAfishaTest.shouldDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductManagerTest.shouldAddProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="netologyQA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.afisha.*" />
+          <option name="PATTERN" value="org.example.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.afisha" />
-      <option name="MAIN_CLASS_NAME" value="org.example.afisha.ManagerAfishaTest" />
-      <option name="METHOD_NAME" value="shouldDeleteById" />
+      <option name="PACKAGE_NAME" value="org.example.product" />
+      <option name="MAIN_CLASS_NAME" value="org.example.product.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldAddProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldReturnSearchedProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netologyQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.product" />
+      <option name="MAIN_CLASS_NAME" value="org.example.product.ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldReturnSearchedProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -210,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductManagerTest.shouldReturnSearchedProduct" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldAddProducts" />
+        <item itemvalue="JUnit.ManagerAfishaTest.shouldAddMovies" />
         <item itemvalue="JUnit.ManagerAfishaTest.removeAllMovies" />
         <item itemvalue="JUnit.ManagerAfishaTest.returnLastMovies" />
-        <item itemvalue="JUnit.ManagerAfishaTest.shouldDeleteById" />
-        <item itemvalue="JUnit.ManagerAfishaTest.shouldAddMovies" />
-        <item itemvalue="JUnit.ManagerAfishaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,6 +278,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
           <line>14</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/product/ProductManagerTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
